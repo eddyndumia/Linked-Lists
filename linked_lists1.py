@@ -94,7 +94,16 @@ singlelinkedlist.tail = node2
 
 
 singlyLinkedList = SLinkedList()
+# insert some random data into the list
+def insertData(self, maxelem=1000, maxint=100):
+    from random import randint
+    for i in range(maxint):
+        elems = randint(0,maxelem)
+        singlyLinkedList.insert(elems, 0)
+    
+    return "all data inserted successfully"
+        
+insertData(singlyLinkedList)
 
-singlyLinkedList.insert(9, 1)
 
 print([node.value for node in singlyLinkedList])
