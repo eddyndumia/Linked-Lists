@@ -55,12 +55,12 @@ class struct:
             else:
                 
                 bin1 = None
-                counter = None
+                counter = 0
                 while counter < index - 1:
-                    bin1 = self.ref 
+                    bin1 = self.h.ref 
                     counter += 1
                 tempAddress = bin1
-                self.ref = tempData
+                self.h.ref = tempData
                 tempData.ref = tempAddress
                 
 
@@ -80,14 +80,27 @@ def fillData(self, location, maxelems=100, maxint=1000):
         
 # instance 
 
-
+list002 = struct()
+list001 = struct()
 
 fillData(list1, 2)
+fillData(list001, 0)
+fillData(list002, 4)
 
 
 # print
 
-print([node.data for node in list1])
+
+
+list2 = [node.data for node in list1]
+list001 = [node.data for node in list001]
+list002 = [node.data for node in list002]
+
+
+list3 = []
+list3 += list002 + list001
+tupletest = tuple(list3)
+print(tupletest)
 
 
                 
