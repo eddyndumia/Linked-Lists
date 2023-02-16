@@ -18,7 +18,7 @@ class SLinkedList:
 
     # create a function that makes it iterable for you to print
 
-    def _iter__(self):
+    def __iter__(self):
         node = self.head
         while node:
             yield node
