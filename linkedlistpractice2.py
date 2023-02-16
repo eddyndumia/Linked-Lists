@@ -66,7 +66,7 @@ class SingleLinkedList:
                     counter += 1
                 tempAddress = fetchAddress
                 self.head.ref = tempData
-                self.head.ref = tempAddress
+                tempData.ref = tempAddress
                 
 
 
@@ -83,7 +83,7 @@ def fillData(self):
     from random import randint
     for i in range(1000):
         elems = randint(0, 1000)
-        SingleLinkedList.insert(self, elems, 0)
+        SingleLinkedList.insert(self, elems, 5)
         
 # call the function to insert
 
