@@ -66,8 +66,17 @@ class SLinkedList:
 
                 # after updating the previous_node.next variable, now you can update the current_node.next to te
 
+    
                 newNode.next = nextNode
-
+        
+    def traverseList(self):
+        if self.head is None:
+            print("List is EMPTY!")
+        else:
+            node = self.head
+            while node is not None:
+                print(node.value)
+                node = node.next
 
     # init object of SLinkdList()
 singlelinkedlist = SLinkedList()
@@ -104,6 +113,10 @@ def insertData(self, maxelem=1000, maxint=100):
     return "all data inserted successfully"
         
 insertData(singlyLinkedList)
+singlyLinkedList.traverseList
 
 
 print([node.value for node in singlyLinkedList])
+singlyLinkedList.traverseList()
+
+
