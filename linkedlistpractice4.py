@@ -48,7 +48,7 @@ class structList:
             else:
                 # at the middle
                 
-                tempbin = None
+                tempbin = self.head
                 counter = 0
                 while counter < location - 1:
                     # because we want to insert right before the given location/index

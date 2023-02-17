@@ -58,7 +58,7 @@ class SingleLinkedList:
             # wost case scenario insertion at the middle 
             
             else:
-                fetchAddress = None
+                fetchAddress = self.head
                 counter = 0
                 
                 while counter < location - 1:
@@ -83,7 +83,7 @@ def fillData(self):
     from random import randint
     for i in range(1000):
         elems = randint(0, 1000)
-        SingleLinkedList.insert(self, elems, 5)
+        SingleLinkedList.insert(self, elems, 1)
         
 # call the function to insert
 

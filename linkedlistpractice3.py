@@ -54,7 +54,7 @@ class struct:
             
             else:
                 
-                bin1 = None
+                bin1 = self.h
                 counter = 0
                 while counter < index - 1:
                     bin1 = self.h.ref 
