@@ -68,6 +68,7 @@ node = Node()
 list1 = List()
 list1.insert(2,0)
 list1.insert(3,0)
+
 list1.insert(4,0)
 print([node.data for node in list1])
 list1.traverseList()
